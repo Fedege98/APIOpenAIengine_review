@@ -6,7 +6,7 @@ from googletrans import Translator
 app = Flask(__name__)
 
 # Configura le API di OpenAI
-openai.api_key = "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"
+openai.api_key = ""
 
 # Configura l'email di invio
 email = "federicogemmo@gmail.com"
