@@ -9,8 +9,8 @@ app = Flask(__name__)
 openai.api_key = ""
 
 # Configura l'email di invio
-email = "federicogemmo@gmail.com"
-password = "F9GCesare_98**"
+email = ""
+password = ""
 
 # Configura il server SMTP
 '''server = smtplib.SMTP("smtp.gmail.com", 587)
