@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensione generata</title>
+</head>
+<body>
+    <h1>Recensione generata</h1>
+    <p>{{ review }}</p>
+    <form action="/send_email" method="post">
+        <input type="hidden" name="review" value="{{ review }}">
+        <input type="hidden" name="company_name" value="{{ company_name }}">
+        <label for="recipient">Indirizzo email dell'azienda:</label><br>
+        <input type="email" id="recipient" name="recipient" required><br>
+        <input type="submit" value="Approva e invia">
+    </form>
+    <a href="/">Torna indietro</a>
+</body>
+</html>
